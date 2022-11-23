@@ -45,9 +45,9 @@ export default function SigninPage(props) {
   // We only want to render providers
 
   const { error } = router.query;
-  console.log('error', error);
-
+  
   if (error) {
+    console.log('error', error);
     return (
       <SigninContainer title="Keystone - Sign In">
         <H1>Sign In - Error</H1>
